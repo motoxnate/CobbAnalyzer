@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainWindow">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="642" height="589"/>
+    </constraints>
+    <properties>
+      <maximumSize width="15360" height="8640"/>
+      <minimumSize width="580" height="200"/>
+      <preferredSize width="600" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <splitpane id="9a886" binding="SplitPane">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="f5488" binding="Tabs">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="a782c" binding="info" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Datalog Info"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="4fec5" binding="raw_data" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Raw Data"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="c327e" binding="graph" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Grapher"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="37f58" binding="analysis" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Analysis"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="ad4f" binding="SidebarPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="a0892" binding="SidebarScrollPane">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="321e6" class="javax.swing.JList" binding="DatalogList">
+                    <constraints/>
+                    <properties>
+                      <autoscrolls value="false"/>
+                      <name value=""/>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <toolbar id="f8e58" binding="SidebarToolbar">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4a549" class="javax.swing.JComboBox" binding="SortingMethod">
+                    <constraints/>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <toolTipText value="Sorting"/>
+                    </properties>
+                  </component>
+                  <hspacer id="47922">
+                    <constraints/>
+                  </hspacer>
+                  <component id="f8bb6" class="javax.swing.JButton" binding="newFolderButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <maximumSize width="80" height="30"/>
+                      <minimumSize width="80" height="30"/>
+                      <preferredSize width="80" height="30"/>
+                      <text value="New Folder"/>
+                    </properties>
+                  </component>
+                  <component id="78596" class="javax.swing.JButton" binding="NewDatalog">
+                    <constraints/>
+                    <properties>
+                      <enabled value="true"/>
+                      <hideActionText value="false"/>
+                      <maximumSize width="30" height="30"/>
+                      <minimumSize width="30" height="30"/>
+                      <preferredSize width="30" height="30"/>
+                      <rolloverEnabled value="false"/>
+                      <selected value="false"/>
+                      <text value="+"/>
+                      <toolTipText value="New Datalog"/>
+                    </properties>
+                  </component>
+                  <component id="e4ac6" class="javax.swing.JButton" binding="RemoveDatalog">
+                    <constraints/>
+                    <properties>
+                      <maximumSize width="30" height="30"/>
+                      <minimumSize width="30" height="30"/>
+                      <preferredSize width="30" height="30"/>
+                      <text value="–"/>
+                      <toolTipText value="Remove Datalog"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+      <toolbar id="6886f" binding="MainToolbar">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="88a08" class="javax.swing.JButton" binding="HideSidebar">
+            <constraints/>
+            <properties>
+              <label value="Hide Sidebar"/>
+              <text value="Hide Sidebar"/>
+            </properties>
+          </component>
+          <component id="b964f" class="javax.swing.JButton" binding="Settings">
+            <constraints/>
+            <properties>
+              <label value="Settings"/>
+              <text value="Settings"/>
+            </properties>
+          </component>
+          <component id="4033e" class="javax.swing.JButton" binding="NewDatalogMain">
+            <constraints/>
+            <properties>
+              <label value="New Datalog"/>
+              <text value="New Datalog"/>
+            </properties>
+          </component>
+          <component id="9010f" class="javax.swing.JButton" binding="AnalysisSettings">
+            <constraints/>
+            <properties>
+              <label value="Analysis Settings"/>
+              <text value="Analysis Settings"/>
+            </properties>
+          </component>
+          <component id="8c749" class="javax.swing.JButton" binding="GraphSettings">
+            <constraints/>
+            <properties>
+              <label value="Graph Settings"/>
+              <text value="Graph Settings"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="MissingMnemonic"/>
+  </inspectionSuppressions>
+</form>
