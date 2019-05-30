@@ -10,7 +10,7 @@ import java.util.*;
 public class MainWindow {
     public  JPanel MainPanel;
     private JTabbedPane Tabs;
-    private JList DatalogList;
+    private JList displayedList;
     private JButton newFolderButton;
     private JComboBox SortingMethod;
     private JButton NewDatalog;
@@ -30,23 +30,36 @@ public class MainWindow {
     private JScrollPane SidebarScrollPane;
     private JToolBar SidebarToolbar;
 
-    private ArrayList datalogs;
+    protected JFrame nameFrame;
+
+    private List datalogs;
 
     public MainWindow() {
+        datalogs = new ArrayList();
+        MainWindow self = this;
+
+        // TODO: Add all datalogs from libray before loading.
+        datalogs.add(new Datalog("Test1"));
+        displayedList.setListData(datalogs.toArray());
+        displayedList.setCellRenderer(new ListRenderer());
         NewDatalogMain.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Prompt for user input
-                String name = JOptionPane.showInputDialog("New Datalog Name");
-
-                //Add the datalog
-                if(name != null) {
-                    System.out.println("Hi");
-                    datalogs.add(new Datalog(name));
-                }
+                //Make new ask for datalog name window, which then adds it.
+                nameFrame = new JFrame("Datalog Name");
+                nameFrame.setContentPane(new DatalogName(self).panel);
+                nameFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                nameFrame.pack();
+                nameFrame.setVisible(true);
             }
         });
     }
+
+    protected void addDatalog(Datalog log) {
+        datalogs.add(log);
+        displayedList.setListData(datalogs.toArray());
+    }
+
 
     private void createUIComponents() {
         // TODO: place custom component creation code here

@@ -37,4 +37,12 @@ public class Datalog {
             System.out.println("Exception Getting Attributes " + E);
         }
     }
+
+    public String getName() {
+        return name;
+    }
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
 }

@@ -81,11 +81,12 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <component id="321e6" class="javax.swing.JList" binding="DatalogList">
+                  <component id="321e6" class="javax.swing.JList" binding="displayedList">
                     <constraints/>
                     <properties>
                       <autoscrolls value="false"/>
-                      <name value=""/>
+                      <model/>
+                      <name value="datalogs"/>
                       <selectionMode value="0"/>
                     </properties>
                   </component>
