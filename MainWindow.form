@@ -81,7 +81,7 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <component id="321e6" class="javax.swing.JList" binding="displayedList">
+                  <component id="321e6" class="javax.swing.JList" binding="DatalogList">
                     <constraints/>
                     <properties>
                       <autoscrolls value="false"/>
