@@ -34,6 +34,8 @@ public class MainWindow {
 
     private List datalogs;
 
+    //TODO Should Change Dataog List into a Tree
+
     public MainWindow() {
         // Main Window Globals
         datalogs = new ArrayList();
