@@ -5,6 +5,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.*;
 
 public class DatalogName {
     public JPanel panel;
@@ -12,11 +13,11 @@ public class DatalogName {
     private JLabel TextLabel;
     private JButton cancelButton;
     private JButton acceptButton;
-    private MainWindow main;
+    private MainWindow mainWindow;
 
 
     public DatalogName(MainWindow m) {
-        main = m;
+        mainWindow = m;
         cancelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,11 +31,17 @@ public class DatalogName {
             public void actionPerformed(ActionEvent e) {
                 String name = datalogName.getText();
                 if(!name.equals("")) {
-                    Datalog log = new Datalog(name);
-                    System.out.println(name);
-                    main.addDatalog(log);
-                    System.out.println("Added " + log);
-                    main.nameFrame.dispose();
+                    boolean availableName = true;
+                    List<Datalog> datalogs = mainWindow.getDatalogs();
+                    for(Datalog test : datalogs) {
+                        if(name.equals(test.getName())) availableName = false;
+                        System.out.println(test);
+                    } if(availableName) {
+                        Datalog log = new Datalog(name);
+                        mainWindow.addDatalog(log);
+                        System.out.println("Added " + log);
+                        mainWindow.nameFrame.dispose();
+                    }
                 }
             }
         });
@@ -42,7 +49,7 @@ public class DatalogName {
 
     public void exit() {
 //        main.nameFrame.setVisible(false);
-        main.nameFrame.dispose();
+        mainWindow.nameFrame.dispose();
     }
 
 }

@@ -3,9 +3,12 @@
  */
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
+import java.io.*;
 
 public class MainWindow {
     public  JPanel MainPanel;
@@ -29,25 +32,48 @@ public class MainWindow {
     private JPanel SidebarPanel;
     private JScrollPane SidebarScrollPane;
     private JToolBar SidebarToolbar;
+    private JButton AddData;
+    private JLabel NameLabel;
+    private JLabel DateLabel;
+    private JTextField LogNameLabel;
+    private JLabel LogDateLabel;
+    private JTable DataTable;
+    private JButton UpdateNameButton;
 
     protected JFrame nameFrame;
 
     private List datalogs;
+    private final JFileChooser fileChooser = new JFileChooser();
+    private Datalog currentLog = null;
 
-    //TODO Should Change Dataog List into a Tree
+    //TODO Should Change Dataog List into a Tree to support folders
 
     public MainWindow() {
         // Main Window Globals
         datalogs = new ArrayList();
         MainWindow self = this;
 
-        //Setup Buttons
-
+        // Load Datalogs
         // TODO: Add all datalogs from libray before loading.
         datalogs.add(new Datalog("Test1"));
-        DatalogList.setListData(datalogs.toArray());
+
+
+
+        updateDatalogs();
         DatalogList.setCellRenderer(new ListRenderer());
 
+        //Setup Buttons
+
+        //Dynamic List Selection Listener
+        DatalogList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if(e.getValueIsAdjusting()) {
+                    currentLog = (Datalog)DatalogList.getSelectedValue();
+                    updateInfoTab();
+                }
+            }
+        });
         //New Datalog Button
         NewDatalogMain.addActionListener(new ActionListener() {
             @Override
@@ -73,6 +99,31 @@ public class MainWindow {
             }
         });
 
+        //Import CSV Button
+        AddData.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource() == AddData) {
+                    int returnVal = fileChooser.showOpenDialog(MainPanel);
+
+                    if(returnVal == JFileChooser.APPROVE_OPTION) {
+                        File file = fileChooser.getSelectedFile();
+                        importData(file);
+                    }
+                }
+            }
+        });
+
+    }
+
+    protected void updateInfoTab() {
+        try {
+            LogNameLabel.setText(currentLog.getName());
+            LogDateLabel.setText(currentLog.getTimestamp().toString());
+        } catch(NullPointerException E) {
+            LogNameLabel.setText("None");
+            LogDateLabel.setText("None");
+        }
     }
 
     protected void newDatalogAction(MainWindow self) {
@@ -100,6 +151,17 @@ public class MainWindow {
         }
     }
 
+    protected void importData(File file) {
+        try {
+            Datalog log = (Datalog) DatalogList.getSelectedValue();
+            boolean error = log.importCSV(file.getPath());
+            if(error) System.err.println("Error importing data");
+        } catch(Exception E) {
+            System.err.println("Error importing data\n" + E);
+        }
+        updateInfoTab();
+    }
+
     private void updateDatalogs() {
         DatalogList.setListData(datalogs.toArray());
     }
@@ -109,4 +171,9 @@ public class MainWindow {
     }
 
 
+    //Interaction Commands
+    public List<Datalog> getDatalogs() {
+        List<Datalog> logs = datalogs;
+        return logs;
+    }
 }
