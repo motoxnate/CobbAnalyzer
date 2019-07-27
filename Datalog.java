@@ -32,22 +32,20 @@ public class Datalog {
         try {
             Files.copy(path1, path2, COPY_ATTRIBUTES);
         } catch(java.nio.file.NoSuchFileException F) {
-            File ApplicationSupportFolder = new File(CONSTANTS.ApplicationSupportPath);
-            if(!ApplicationSupportFolder.exists()) {
-                boolean status = ApplicationSupportFolder.mkdir();
-                if(!status) System.err.println("Application Support folder could not be created");
+            MainWindow.CreateApplicationSupportFolder();
                 try {
                     Files.copy(path1, path2, COPY_ATTRIBUTES);
                 } catch(java.io.IOException E) {
                     System.err.println("Created Application Support folder, but could not import datalog");
                     E.printStackTrace();
-                    return(false);
+                    return (false);
                 }
-            }
         } catch(java.nio.file.FileAlreadyExistsException E) {
             System.err.println("File Already Exists");
             throw E;
-            //TODO Add Replace Option
+            //TODO Add Replace Option?
+
+
         } catch(java.io.IOException E) {
             System.err.println("Error Copying");
             E.printStackTrace();
@@ -67,6 +65,8 @@ public class Datalog {
             System.err.println("Exception Getting Attributes");
             E.printStackTrace();
             //TODO If file doesn't exist, would you like to import it?
+
+
         }
     }
 

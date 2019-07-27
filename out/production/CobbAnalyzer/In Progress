@@ -1,0 +1,3 @@
+Currently working on: JTextField as the name label to allow for renaming datalogs.
+Need to link the button to the right to update the name.
+Need to link the enter key to update directly from the active text field.

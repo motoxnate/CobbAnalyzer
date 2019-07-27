@@ -7,16 +7,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
 
-public class DatalogName {
+public class NewDatalogName {
     public JPanel panel;
     private JTextField datalogName;
     private JLabel TextLabel;
     private JButton cancelButton;
     private JButton acceptButton;
+    private JLabel name_available_label;
+    private JLabel name_available;
     private MainWindow mainWindow;
 
+    //TODO check once a second and let the user know if the datalog name is available.
 
-    public DatalogName(MainWindow m) {
+    public NewDatalogName(MainWindow m) {
         mainWindow = m;
         cancelButton.addActionListener(new ActionListener() {
             @Override
@@ -36,11 +39,16 @@ public class DatalogName {
                     for(Datalog test : datalogs) {
                         if(name.equals(test.getName())) availableName = false;
                         System.out.println(test);
-                    } if(availableName) {
+                    } if(availableName) {               //If the name is available
                         Datalog log = new Datalog(name);
                         mainWindow.addDatalog(log);
                         System.out.println("Added " + log);
+                        //TODO check if file exists, if so link it. If not, ask to import data.
+
                         mainWindow.nameFrame.dispose();
+                    } else {                            //If the name is taken
+                        // Show Label, name is taken, do not overwrite.
+                        name_available.setText("Name Taken");
                     }
                 }
             }

@@ -10,6 +10,8 @@ import java.awt.event.ActionListener;
 import java.util.*;
 import java.io.*;
 
+//TODO Major refactor immediately: always ask to import a datalog.
+
 public class MainWindow {
     public  JPanel MainPanel;
     private JTabbedPane Tabs;
@@ -78,7 +80,8 @@ public class MainWindow {
         NewDatalogMain.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                newDatalogAction(self);
+//                newDatalogAction(self);
+                newDatalog();
             }
 
         });
@@ -99,7 +102,7 @@ public class MainWindow {
             }
         });
 
-        //Import CSV Button
+        //Import CSV Button, + Button, and New Datalog Button
         AddData.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -128,11 +131,20 @@ public class MainWindow {
 
     protected void newDatalogAction(MainWindow self) {
             //Make new ask for datalog name window, which then adds it.
-            nameFrame = new JFrame("Datalog Name");
-            nameFrame.setContentPane(new DatalogName(self).panel);
+            nameFrame = new JFrame("New Datalog");
+            nameFrame.setContentPane(new NewDatalogName(self).panel);
             nameFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             nameFrame.pack();
             nameFrame.setVisible(true);
+    }
+
+    protected void newDatalog() {
+        int returnVal = fileChooser.showOpenDialog(MainPanel);
+
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            importData(file);
+        }
     }
 
     protected void addDatalog(Datalog log) {
@@ -176,4 +188,13 @@ public class MainWindow {
         List<Datalog> logs = datalogs;
         return logs;
     }
+
+    public static void CreateApplicationSupportFolder() {
+        File ApplicationSupportFolder = new File(CONSTANTS.ApplicationSupportPath);
+        if(!ApplicationSupportFolder.exists()) {
+            boolean status = ApplicationSupportFolder.mkdir();
+            if(!status) System.err.println("Application Support folder could not be created");
+        }
+    }
+
 }
