@@ -5,9 +5,11 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.*;
+import java.io.*;
 
-public class NewDatalogName {
+public class NewDatalogWindow {
     public JPanel panel;
     private JTextField datalogName;
     private JLabel TextLabel;
@@ -17,9 +19,11 @@ public class NewDatalogName {
     private JLabel name_available;
     private MainWindow mainWindow;
 
+    private final JFileChooser fileChooser = new JFileChooser();
+
     //TODO check once a second and let the user know if the datalog name is available.
 
-    public NewDatalogName(MainWindow m) {
+    public NewDatalogWindow(MainWindow m) {
         mainWindow = m;
         cancelButton.addActionListener(new ActionListener() {
             @Override
@@ -40,12 +44,34 @@ public class NewDatalogName {
                         if(name.equals(test.getName())) availableName = false;
                         System.out.println(test);
                     } if(availableName) {               //If the name is available
+                        //Create new datalog
+                        System.out.println("Name is Available");
                         Datalog log = new Datalog(name);
+
+                        //TODO check if file exists, if so link it. If not, ask to import data.
+                        String dataPath = CONSTANTS.datalogPath + name + ".dat";
+                        File dataFile = new File(dataPath);
+
+                        if(dataFile.exists()) {         //If data exists
+                            System.out.println("File already exists");
+                            log.getAttributes();
+                        } else {                        //If data does not exist
+                            System.out.println("File DNE");
+                            int returnVal = fileChooser.showOpenDialog(mainWindow.MainPanel);
+                            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                                File file = fileChooser.getSelectedFile();
+                                //Check file extension is CSV
+                                if (file.getPath().endsWith("CSV") || file.getPath().endsWith("csv")) {
+                                    log.importCSV(file.getPath());
+                                } else {
+                                    System.err.println("File is not a CSV!");
+                                }
+                            }
+                        }
+                        mainWindow.nameFrame.dispose();
+
                         mainWindow.addDatalog(log);
                         System.out.println("Added " + log);
-                        //TODO check if file exists, if so link it. If not, ask to import data.
-
-                        mainWindow.nameFrame.dispose();
                     } else {                            //If the name is taken
                         // Show Label, name is taken, do not overwrite.
                         name_available.setText("Name Taken");

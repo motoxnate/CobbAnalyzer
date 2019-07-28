@@ -24,7 +24,7 @@ public class Datalog {
         }
     }
 
-    public boolean importCSV(String path) throws FileAlreadyExistsException {
+    public boolean importCSV(String path) {
         //Copy file into local directory
         Path path1 = get(path);
         Path path2 = get(CONSTANTS.datalogPath + filename);
@@ -42,7 +42,6 @@ public class Datalog {
                 }
         } catch(java.nio.file.FileAlreadyExistsException E) {
             System.err.println("File Already Exists");
-            throw E;
             //TODO Add Replace Option?
 
 

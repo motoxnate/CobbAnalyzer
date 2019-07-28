@@ -80,7 +80,6 @@ public class MainWindow {
         NewDatalogMain.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                newDatalogAction(self);
                 newDatalog();
             }
 
@@ -90,7 +89,7 @@ public class MainWindow {
         NewDatalog.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                newDatalogAction(self);
+                newDatalog();
             }
         });
 
@@ -129,23 +128,24 @@ public class MainWindow {
         }
     }
 
-    protected void newDatalogAction(MainWindow self) {
+    protected void newDatalog() {
+        nameFrame = new JFrame("New Datalog");
+        nameFrame.setContentPane(new NewDatalogWindow(this).panel);
+        nameFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        nameFrame.pack();
+        nameFrame.setVisible(true);
+    }
+
+    protected void newDatalogName(MainWindow self, File data) {
             //Make new ask for datalog name window, which then adds it.
             nameFrame = new JFrame("New Datalog");
-            nameFrame.setContentPane(new NewDatalogName(self).panel);
+            nameFrame.setContentPane(new NewDatalogWindow(self).panel);
             nameFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             nameFrame.pack();
             nameFrame.setVisible(true);
     }
 
-    protected void newDatalog() {
-        int returnVal = fileChooser.showOpenDialog(MainPanel);
 
-        if(returnVal == JFileChooser.APPROVE_OPTION) {
-            File file = fileChooser.getSelectedFile();
-            importData(file);
-        }
-    }
 
     protected void addDatalog(Datalog log) {
         datalogs.add(log);

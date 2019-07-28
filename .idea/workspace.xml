@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0457b4-50f5-4705-92c9-eb8b83c91bd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NewDatalogImportOption.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewDatalogImportOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_4_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CobbAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CobbAnalyzer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Datalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalogName.form" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogName.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalogName.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewDatalogName.form" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewDatalogName.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/DatalogName$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/DatalogName$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/DatalogName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogName$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogName$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogName.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,27 +36,30 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="-4">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2727#2728#0" expanded="true" />
-                <element signature="e#2781#2782#0" expanded="true" />
-                <element signature="e#2972#2973#0" expanded="true" />
-                <element signature="e#3019#3020#0" expanded="true" />
+                <element signature="e#2487#2488#0" expanded="true" />
+                <element signature="e#2531#2532#0" expanded="true" />
+                <element signature="e#2757#2758#0" expanded="true" />
+                <element signature="e#2809#2810#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="e#3047#3048#0" expanded="true" />
+                <element signature="e#5496#5497#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogName.java">
+        <entry file="file://$PROJECT_DIR$/NewDatalogWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+            <state relative-caret-position="61">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,15 +68,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogName.form">
+        <entry file="file://$PROJECT_DIR$/NewDatalogWindow.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Datalog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="309">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2392#2393#0" expanded="true" />
@@ -83,20 +84,6 @@
                 <element signature="e#2452#2453#0" expanded="true" />
                 <element signature="e#2484#2485#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -128,6 +115,8 @@
       <find>Already</find>
       <find>File Alre</find>
       <find>CSV</find>
+      <find>path</find>
+      <find>exi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,19 +136,19 @@
         <option value="$PROJECT_DIR$/NewDatalogImportOption.java" />
         <option value="$PROJECT_DIR$/DatalogName.form" />
         <option value="$PROJECT_DIR$/DatalogName.java" />
-        <option value="$PROJECT_DIR$/Datalog.java" />
         <option value="$PROJECT_DIR$/NewDatalogName.java" />
         <option value="$PROJECT_DIR$/MainWindow.java" />
+        <option value="$PROJECT_DIR$/Datalog.java" />
+        <option value="$PROJECT_DIR$/NewDatalogWindow.java" />
       </list>
     </option>
   </component>
   <component name="NamedScopeManager">
     <scope name="Default" pattern="" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="878" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -185,7 +174,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="357" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -235,7 +224,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921507" visible="true" weight="0.14806867" />
@@ -246,8 +235,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.302799" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28674698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,53 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogName.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CONSTANTS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="146" selection-start-line="9" selection-start-column="146" selection-end-line="9" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Datalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2392#2393#0" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="e#2484#2485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/In Progress">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -358,16 +300,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/NewDatalogWindow.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="18">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONSTANTS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="146" selection-start-line="9" selection-start-column="146" selection-end-line="9" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewDatalogWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2727#2728#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainWindow.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+            <element signature="e#2757#2758#0" expanded="true" />
+            <element signature="e#2809#2810#0" expanded="true" />
+            <element signature="e#3000#3001#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#5496#5497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Datalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2392#2393#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -449,6 +441,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>opencsv-4.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
