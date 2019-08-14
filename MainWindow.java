@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
 import java.io.*;
+import org.apache.commons.io.FilenameUtils;
 
 //TODO Major refactor immediately: always ask to import a datalog.
 
@@ -56,8 +57,13 @@ public class MainWindow {
         MainWindow self = this;
 
         // Load Datalogs
-        // TODO: Add all datalogs from libray before loading.
-        datalogs.add(new Datalog("Test1"));
+        File logFolder = new File(CONSTANTS.datalogPath);
+        File[] prelimList = logFolder.listFiles();
+        for(File datalog : prelimList) {
+            if(datalog.getName().endsWith("dat")) {
+                datalogs.add(new Datalog(FilenameUtils.getBaseName(datalog.getName())));
+            }
+        }
 
 
 
@@ -153,7 +159,8 @@ public class MainWindow {
     }
 
     protected void removeDatalog() {
-    //TODO Add Error Checking
+        //TODO Add Error Checking
+        //TODO Add option to keep or remove the datafile
         try {
             int index = DatalogList.getSelectedIndex();
             datalogs.remove(index);

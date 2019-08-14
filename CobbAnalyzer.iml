@@ -10,6 +10,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="opencsv-4.6" level="project" />
+    <orderEntry type="library" name="opencsv-4.61" level="project" />
+    <orderEntry type="library" name="commons-io-2" level="project" />
+    <orderEntry type="library" name="commons-lang3-3" level="project" />
   </component>
 </module>
