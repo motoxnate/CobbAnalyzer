@@ -77,9 +77,29 @@ public class Datalog {
             System.err.println("Error reading data");
             e.printStackTrace();
         }
-        for (String[] data : data) {
-            System.out.println("Data : " + data[0]);
+//        for (String[] data : data) {
+//            System.out.println("Data : " + data[0]);    //[0] is first column to print each item
+//        }
+
+        Object[] dataSet = prepareTableData();
+        /* DATA IS READY TO RETURN TO MAIN */
+    }
+
+    private void loadDataintoChart() {
+
+    }
+
+    private Object[] prepareTableData() {
+        Object[] out = new Object[2];
+        Object[] columns = data.get(0);
+        Object[][] rows = new Object[data.size()-1][];
+        for(int i=1; i<data.size()-1; i++) {
+            rows[i] = data.get(i);
         }
+//        System.out.println(rows[0][0]);
+        out[0] = columns;
+        out[1] = rows;
+        return out;
     }
 
     /** Get the extended attributes from the local imported CSV file **/

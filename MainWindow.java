@@ -5,6 +5,7 @@
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
@@ -48,6 +49,7 @@ public class MainWindow {
     private List datalogs;
     private final JFileChooser fileChooser = new JFileChooser();
     private Datalog currentLog = null;
+//    private DefaultTableModel
 
     //TODO Should Change Dataog List into a Tree to support folders
 
@@ -194,6 +196,17 @@ public class MainWindow {
     public List<Datalog> getDatalogs() {
         List<Datalog> logs = datalogs;
         return logs;
+    }
+
+    public void setDataTable(Object[][] data, Object[] columnNames) {
+        DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0);
+        DataTable = new JTable(tableModel);
+
+        //Populate Data Rows
+        for(Object[] row : data) {
+            tableModel.addRow(row);
+        }
+
     }
 
     public static void CreateApplicationSupportFolder() {
