@@ -22,7 +22,7 @@ public class Datalog {
         try {
             getAttributes();    // Just in case the log file already exists
             log = new File(CONSTANTS.datalogPath + filename);
-            loadData();
+//            loadData();
         } catch (Exception E) {
             System.err.println("Datalog " + name + " does not exist");
             E.printStackTrace();
@@ -60,12 +60,12 @@ public class Datalog {
         log = new File(CONSTANTS.datalogPath + filename);
         getAttributes();
 
-        loadData();
+//        loadData();
         return(true);
     }
 
     /** Load data from the already imported CSV file into the running application **/
-    public void loadData() {
+    public Object[][][] loadData() {
         try {
             Reader reader = new FileReader(log);
             CSVReader csvreader = new CSVReader(reader);
@@ -81,23 +81,23 @@ public class Datalog {
 //            System.out.println("Data : " + data[0]);    //[0] is first column to print each item
 //        }
 
-        Object[] dataSet = prepareTableData();
-        /* DATA IS READY TO RETURN TO MAIN */
+        Object[][][] dataSet = prepareTableData();
+        return dataSet;
     }
 
     private void loadDataintoChart() {
 
     }
 
-    private Object[] prepareTableData() {
-        Object[] out = new Object[2];
+    private Object[][][] prepareTableData() {
+        Object[][][] out = new Object[2][data.size()][];
         Object[] columns = data.get(0);
         Object[][] rows = new Object[data.size()-1][];
         for(int i=1; i<data.size()-1; i++) {
             rows[i] = data.get(i);
         }
 //        System.out.println(rows[0][0]);
-        out[0] = columns;
+        out[0][0] = columns;
         out[1] = rows;
         return out;
     }

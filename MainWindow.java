@@ -43,6 +43,7 @@ public class MainWindow {
     private JLabel LogDateLabel;
     private JTable DataTable;
     private JButton UpdateNameButton;
+    private JScrollPane tableScrollPane;
 
     protected JFrame nameFrame;
 
@@ -81,6 +82,7 @@ public class MainWindow {
                 if(e.getValueIsAdjusting()) {
                     currentLog = (Datalog)DatalogList.getSelectedValue();
                     updateInfoTab();
+                    updateDataTable();
                 }
             }
         });
@@ -177,6 +179,7 @@ public class MainWindow {
             Datalog log = (Datalog) DatalogList.getSelectedValue();
             boolean error = log.importCSV(file.getPath());
             if(error) System.err.println("Error importing data");
+            else currentLog.loadData();
         } catch(Exception E) {
             System.err.println("Error importing data\n" + E);
         }
@@ -191,22 +194,18 @@ public class MainWindow {
         // TODO: place custom component creation code here
     }
 
-
     //Interaction Commands
     public List<Datalog> getDatalogs() {
         List<Datalog> logs = datalogs;
         return logs;
     }
 
-    public void setDataTable(Object[][] data, Object[] columnNames) {
-        DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0);
-        DataTable = new JTable(tableModel);
-
-        //Populate Data Rows
-        for(Object[] row : data) {
-            tableModel.addRow(row);
-        }
-
+    public void updateDataTable() {
+        Object[][][] tempData = currentLog.loadData();
+        Object[] columnNames = tempData[0][0];
+        Object[][] data = tempData[1];
+        DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
+        DataTable.setModel(tableModel);
     }
 
     public static void CreateApplicationSupportFolder() {
