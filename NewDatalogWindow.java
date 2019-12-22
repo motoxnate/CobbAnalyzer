@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.*;
 import java.io.*;
+import org.apache.commons.io.FilenameUtils;
 
 public class NewDatalogWindow {
     public JPanel panel;
@@ -24,6 +25,20 @@ public class NewDatalogWindow {
     //TODO check once a second and let the user know if the datalog name is available.
 
     public NewDatalogWindow(MainWindow m) {
+        //Select a Datalog to Import
+//        int returnVal = fileChooser.showOpenDialog(mainWindow.MainPanel);
+//        if (returnVal == JFileChooser.APPROVE_OPTION) {
+//            File file = fileChooser.getSelectedFile();
+//            //Check file extension is CSV
+//            if (file.getPath().endsWith("CSV") || file.getPath().endsWith("csv")) {
+//                String basename = FilenameUtils.getBaseName(file.getPath());
+//                Datalog log = new Datalog(basename);
+//                log.importCSV(file.getPath());
+//            } else {
+//                System.err.println("File is not a CSV!");
+//            }
+//        }
+
         mainWindow = m;
         cancelButton.addActionListener(new ActionListener() {
             @Override
@@ -37,22 +52,23 @@ public class NewDatalogWindow {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String name = datalogName.getText();
-                if(!name.equals("")) {
+                if (!name.equals("")) {
                     boolean availableName = true;
                     List<Datalog> datalogs = mainWindow.getDatalogs();
-                    for(Datalog test : datalogs) {
-                        if(name.equals(test.getName())) availableName = false;
+                    for (Datalog test : datalogs) {
+                        if (name.equals(test.getName())) availableName = false;
                         System.out.println(test);
-                    } if(availableName) {               //If the name is available
+                    }
+                    if (availableName) {               //If the name is available
                         //Create new datalog
                         System.out.println("Name is Available");
-                        Datalog log = new Datalog(name);
+                        Datalog log = new Datalog(name, null);
 
                         //TODO check if file exists, if so link it. If not, ask to import data.
                         String dataPath = CONSTANTS.datalogPath + name + ".dat";
                         File dataFile = new File(dataPath);
 
-                        if(dataFile.exists()) {         //If data exists
+                        if (dataFile.exists()) {         //If data exists
                             System.out.println("File already exists");
                             log.getAttributes();
                         } else {                        //If data does not exist
@@ -85,5 +101,4 @@ public class NewDatalogWindow {
 //        main.nameFrame.setVisible(false);
         mainWindow.nameFrame.dispose();
     }
-
 }

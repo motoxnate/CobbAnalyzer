@@ -16,13 +16,16 @@ public class Datalog {
     private File log;
     private List<String[]> data;
 
-    public Datalog(String Name) {
+    public Datalog(String Name, Path path) {
         name = Name;
         filename = name + ".dat";
+        if(path == null) {
+            path = get(CONSTANTS.datalogPath + filename);
+        }
+        importCSV(path.toString());
         try {
             getAttributes();    // Just in case the log file already exists
             log = new File(CONSTANTS.datalogPath + filename);
-//            loadData();
         } catch (Exception E) {
             System.err.println("Datalog " + name + " does not exist");
             E.printStackTrace();
@@ -30,7 +33,7 @@ public class Datalog {
     }
 
     /** Allow the user to import the datalog CSV file into the working folder **/
-    public boolean importCSV(String path) {
+    boolean importCSV(String path) {
         //Copy file into local directory
         Path path1 = get(path);
         Path path2 = get(CONSTANTS.datalogPath + filename);
@@ -60,7 +63,6 @@ public class Datalog {
         log = new File(CONSTANTS.datalogPath + filename);
         getAttributes();
 
-//        loadData();
         return(true);
     }
 
@@ -70,6 +72,7 @@ public class Datalog {
             Reader reader = new FileReader(log);
             CSVReader csvreader = new CSVReader(reader);
             data = csvreader.readAll();
+            System.out.println(log.getName());
         } catch(java.io.FileNotFoundException f) {
             System.err.println("File Not Found");
             f.printStackTrace();
@@ -77,9 +80,6 @@ public class Datalog {
             System.err.println("Error reading data");
             e.printStackTrace();
         }
-//        for (String[] data : data) {
-//            System.out.println("Data : " + data[0]);    //[0] is first column to print each item
-//        }
 
         Object[][][] dataSet = prepareTableData();
         return dataSet;

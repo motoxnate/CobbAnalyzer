@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0457b4-50f5-4705-92c9-eb8b83c91bd0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DataTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/natefanning.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/natefanning.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Datalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewDatalogWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/META-INF/CobbAnalyzer.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/META-INF/CobbAnalyzer.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,74 +31,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainWindow.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="182" column="61" lean-forward="true" selection-start-line="182" selection-start-column="61" selection-end-line="182" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewDatalogWindow.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Datalog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CONSTANTS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -100,83 +39,30 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>static</find>
-      <find>date</find>
-      <find>DatalogName</find>
-      <find>Already</find>
-      <find>File Alre</find>
-      <find>CSV</find>
-      <find>path</find>
-      <find>exi</find>
-      <find>loaddata</find>
-      <find>loadData</find>
-      <find>selection</find>
-      <find>importC</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/MainPanel.java" />
-        <option value="$PROJECT_DIR$/TestForm.form" />
-        <option value="$PROJECT_DIR$/MainInterface.java" />
-        <option value="$PROJECT_DIR$/ListRenderer.java" />
-        <option value="$PROJECT_DIR$/CONSTANTS.java" />
-        <option value="$PROJECT_DIR$/Main.java" />
-        <option value="$PROJECT_DIR$/In Progress" />
-        <option value="$PROJECT_DIR$/NewDatalogImportOption.java" />
-        <option value="$PROJECT_DIR$/DatalogName.form" />
-        <option value="$PROJECT_DIR$/DatalogName.java" />
-        <option value="$PROJECT_DIR$/NewDatalogName.java" />
-        <option value="$PROJECT_DIR$/NewDatalogWindow.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
-        <option value="$PROJECT_DIR$/MainWindow.form" />
-        <option value="$PROJECT_DIR$/MainWindow.java" />
-        <option value="$PROJECT_DIR$/Datalog.java" />
-      </list>
-    </option>
   </component>
   <component name="NamedScopeManager">
     <scope name="Default" pattern="" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CobbAnalyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CobbAnalyzer" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1Qk8Td72PXrvN6iI7qM0G3Kj55w" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="357" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="263" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;JAVA" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,165 +95,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559138632737</updated>
+      <workItem from="1571685527273" duration="382000" />
+      <workItem from="1577035782672" duration="6772000" />
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921507" visible="true" weight="0.16309012" />
-      <window_info id="Structure" order="1" sideWeight="0.50078493" side_tool="true" weight="0.13662376" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28674698" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32951653" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Statistic" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MainPanel.java" />
-    <entry file="file://$PROJECT_DIR$/CobbAnalyzer.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainInterface.java" />
-    <entry file="file://$PROJECT_DIR$/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/In Progress">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogImportOption.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Resources/opencsv-4.6.jar!/com/opencsv/CSVParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
-          <folding>
-            <element signature="e#0#13488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewDatalogWindow.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CONSTANTS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="182" column="61" lean-forward="true" selection-start-line="182" selection-start-column="61" selection-end-line="182" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Datalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
