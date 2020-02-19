@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c0457b4-50f5-4705-92c9-eb8b83c91bd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DataTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/natefanning.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/natefanning.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewDatalogWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewDatalogWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/Datalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/META-INF/CobbAnalyzer.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/META-INF/CobbAnalyzer.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CobbAnalyzer/NewDatalogWindow.class" afterDir="false" />
-    </list>
+    <list default="true" id="3c0457b4-50f5-4705-92c9-eb8b83c91bd0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1559138632737</updated>
       <workItem from="1571685527273" duration="382000" />
-      <workItem from="1577035782672" duration="7012000" />
+      <workItem from="1577035782672" duration="7170000" />
     </task>
     <servers />
   </component>
