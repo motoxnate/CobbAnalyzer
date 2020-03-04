@@ -234,7 +234,7 @@ public class MainWindow {
 
     /**
      * Returns a List of the datalogs
-     * @return List<Datalog> logs
+     * @return logs: A List of type Datalog.
      */
     List<Datalog> getDatalogs() {
         List<Datalog> logs = datalogs;
