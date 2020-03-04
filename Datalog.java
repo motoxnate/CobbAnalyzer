@@ -1,5 +1,5 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 import javax.swing.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -9,6 +9,12 @@ import java.nio.file.*;
 import static java.nio.file.Paths.*;
 import static java.nio.file.StandardCopyOption.*;
 import com.opencsv.*;
+
+/**
+ * @author Nathaniel Fanning
+ * @version 0.1
+ * @since 0.1
+ */
 
 public class Datalog {
     private String name, filename;

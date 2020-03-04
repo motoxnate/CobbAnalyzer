@@ -1,8 +1,14 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 
 import java.io.File;
+
+/**
+ * @author Nathaniel Fanning
+ * @version 0.1
+ * @since 0.1
+ */
 
 public final class CONSTANTS {
     public static final String ApplicationSupportName = "CobbAnalyzerData";

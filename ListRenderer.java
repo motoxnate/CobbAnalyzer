@@ -1,5 +1,5 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 
 import javax.swing.*;

@@ -1,5 +1,5 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 
 import javax.swing.*;
@@ -9,6 +9,12 @@ import java.io.File;
 import java.util.*;
 import java.io.*;
 import org.apache.commons.io.FilenameUtils;
+
+/**
+ * @author Nathaniel Fanning
+ * @version 0.1
+ * @since 0.1
+ */
 
 public class NewDatalogWindow {
     public JPanel panel;

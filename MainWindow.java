@@ -1,5 +1,5 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 
 import javax.swing.*;
@@ -12,6 +12,15 @@ import java.io.*;
 import org.apache.commons.io.FilenameUtils;
 import static java.nio.file.Paths.get;
 
+/**
+ * @author Nathaniel Fanning
+ * @version 0.1
+ * @since 0.1
+ */
+
+/**
+ * Class MainWindow: The main window of the application
+ */
 public class MainWindow {
     public  JPanel MainPanel;
     private JTabbedPane Tabs;
@@ -52,6 +61,9 @@ public class MainWindow {
 
     //TODO Should Change Dataog List into a Tree to support folders
 
+    /**
+     * Constructor: Initialize the MainWindow
+     */
     MainWindow() {
         // Main Window Globals
         datalogs = new ArrayList();
@@ -92,7 +104,9 @@ public class MainWindow {
         RemoveDatalog.addActionListener(e -> removeDatalog());
     }   //End Main Window
 
-
+    /**
+     * Update labels on the Info Tab
+     */
     private void updateInfoTab() {
         try {
             LogNameLabel.setText(currentLog.getName());
@@ -103,7 +117,13 @@ public class MainWindow {
         }
     }
 
-
+    /**
+     * Create a new Datalog object in the application.
+     * <p>
+     *     Opens a file chooser to select the CSV file of the log. Copies the file to the data directory of the application.
+     *     Adds a new Datalog object and links it to the copied file.
+     * </p>
+     */
     private void newDatalog() {
      /*   nameFrame = new JFrame("New Datalog");
         nameFrame.setContentPane(new NewDatalogWindow(this).panel);
@@ -118,9 +138,9 @@ public class MainWindow {
             if (file.getPath().endsWith("CSV") || file.getPath().endsWith("csv")) {
                 String basename = FilenameUtils.getBaseName(file.getPath());
                 String test_name = basename;
-                if(unavailableNameCheck(basename)) {
+                if(!availableName(basename)) {  //If the name is not available, add a number to it.
                     int i = 1;
-                    while(unavailableNameCheck(test_name)) {
+                    while(!availableName(test_name)) {
                         test_name = basename + i;
                     }
                 }
@@ -132,8 +152,12 @@ public class MainWindow {
         }
     }
 
-
-    private boolean unavailableNameCheck(String name) {
+    /**
+     * Checks if a name is available for a new Datalog object
+     * @param name: The name to check for availability.
+     * @return bool: True if the name is available, false otherwise.
+     */
+    private boolean availableName(String name) {
         boolean available = false;
         if (!name.equals("")) {
             available = true;
@@ -148,7 +172,7 @@ public class MainWindow {
                 System.out.println("Name is Available");
             }
         }
-        return !available;
+        return available;
     }
 
 
@@ -161,13 +185,9 @@ public class MainWindow {
             nameFrame.setVisible(true);
     }
 
-
-    void addDatalog(Datalog log) {
-        datalogs.add(log);
-        updateDatalogs();
-    }
-
-
+    /**
+     * Remove a datalog from the index. Refers to the selected log at the time
+     */
     private void removeDatalog() {
         //TODO Add Error Checking
         //TODO Add option to keep or remove the datafile
@@ -192,6 +212,7 @@ public class MainWindow {
         updateInfoTab();
     }
 
+    /** Update the datalogs in the visual list. */
     private void updateDatalogs() {
         DatalogList.setListData(datalogs.toArray());
     }
@@ -200,13 +221,27 @@ public class MainWindow {
         // TODO: place custom component creation code here
     }
 
-    //Interaction Commands
+    /* Interaction Functions: Allow access to the MainWindow */
+
+    /**
+     * Add a datalog to the index of logs.
+     * @param log: The datalog object
+     */
+    void addDatalog(Datalog log) {
+        datalogs.add(log);
+        updateDatalogs();
+    }
+
+    /**
+     * Returns a List of the datalogs
+     * @return List<Datalog> logs
+     */
     List<Datalog> getDatalogs() {
         List<Datalog> logs = datalogs;
         return logs;
     }
 
-    //Update Data in Table
+    /** Update the visual data table. */
     void updateDataTable() {
         Object[][][] tempData = currentLog.loadData();
         Object[] columnNames = tempData[0][0];
@@ -219,6 +254,7 @@ public class MainWindow {
         DataTable.setModel(dataTableModel);
     }
 
+    /** On macOS, create the application folder for storing datalogs. */
     static void CreateApplicationSupportFolder() {
         File ApplicationSupportFolder = new File(CONSTANTS.ApplicationSupportPath);
         if(!ApplicationSupportFolder.exists()) {
@@ -226,5 +262,4 @@ public class MainWindow {
             if(!status) System.err.println("Application Support folder could not be created");
         }
     }
-
 }

@@ -1,9 +1,15 @@
 /*
- * Copyright Nathaniel Fanning (c) 2019. All rights reserved.
+ * Copyright Nathaniel Fanning (c) 2020. All rights reserved.
  */
 import javax.swing.*;
 import java.awt.*;
 import java.lang.*;
+
+/**
+ * @author Nathaniel Fanning | motoxnate788@gmail.com
+ * @version 0.1
+ * @since 0.1
+ */
 
 public class Main {
     public static void main(String[] args) {
@@ -18,13 +24,17 @@ public class Main {
         frame.pack();
         frame.setVisible(true);
     }
-
-    private static int getX(int mult) {
+    /**
+     * Get the X dimension of the display
+     */
+    private static int getScreenX(int mult) {
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
         return (int) screensize.getWidth() * mult;
     }
-
-    private static int getY(int mult) {
+    /**
+     * Get they Y dimension of the display
+     */
+    private static int getScreenY(int mult) {
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
         return (int) screensize.getHeight() * mult;
     }
